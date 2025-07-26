@@ -1,0 +1,486 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>UiPath.Activities.System.Date</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Read data from file, populate a web form" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="811.6,6193.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="text" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadTextFile File="{x:Null}" Content="[text]" DisplayName="Read Text File" FileName="D:\Downloads\info.txt" sap:VirtualizedContainerService.HintSize="520,112.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="520,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[text]" />
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="520,5852" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[text.Split({Environment.NewLine}, StringSplitOptions.RemoveEmptyEntries)]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="518.4,5730.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="Name" />
+              <Variable x:TypeArguments="x:String" Name="newText" />
+              <Variable x:TypeArguments="x:String" Name="Age" />
+              <Variable x:TypeArguments="x:String" Name="Country" />
+              <Variable x:TypeArguments="x:String" Name="Gender" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="484.8,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[currentText]" />
+            <Assign sap:VirtualizedContainerService.HintSize="484.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[newText]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[currentText.Replace("," , ":")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[currentText.Replace(&quot;,&quot; , &quot;:&quot;)]" />
+            <Assign sap:VirtualizedContainerService.HintSize="484.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_8">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Name]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[newText.Split(":"c)(1).Trim]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[Name]" />
+            <Assign sap:VirtualizedContainerService.HintSize="484.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Age]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[newText.Split(":"c)(3).Trim]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[Age]" />
+            <Assign sap:VirtualizedContainerService.HintSize="484.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_10">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Country]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[newText.Split(":"c)(5).Trim]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_10" Message="[Country]" />
+            <Assign sap:VirtualizedContainerService.HintSize="484.8,113.6" sap2010:WorkflowViewState.IdRef="Assign_11">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Gender]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[newText.Split(":"c)(7).Trim]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484.8,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[Gender]" />
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Task 2" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484.8,4112.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="024cf02d-c5b6-40ab-b038-5cbe9a08365f" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="451.2,3872.8" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="417.6,122.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                    <uix:NTypeInto ActivateBefore="True" DisplayName="Type Into 'عنوان بريد إلكتروني'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="417.6,250.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="024cf02d-c5b6-40ab-b038-5cbe9a08365f" Text="yahyhisham274@gmail.com">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSd9Ei7Fv1u_-_lMnguFdwgYU9Jrm8ynQeNqiVIsR_eWRN2UKA/viewform" CVScreenId="1adcf317-8eec-4f28-9dfa-46c1489d3fd9" ContentHash="sWOe0Nu6dUi6snmddQ4ssw" CvElementArea="956, 504, 379, 39" CvType="InputBox" DesignTimeRectangle="960, 509, 369, 30" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='whsOnd zHQkBf' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8cff8c3a-2ea3-433f-bce3-73dede98da8d" InformativeScreenshot="6bfb3c6c4ab7413843a6693fdd765e75.png" Reference="E1SM7XKpOkGHcZaTqDgpKg/q9nqaw1GQEWOpI7EHV8Fww" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Task 2' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="1adcf317-8eec-4f28-9dfa-46c1489d3fd9" CvTextArea="1192, 446, 135, 22" CvTextArgument="إلكتروني بريد عنوان" CvType="Text" DesignTimeRectangle="1196, 442, 133, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='عنوان بريد إلكتروني' tag='SPAN' type='' class='M7eMe' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='عنوان بريد إلكتروني' /&gt;" Guid="4de50b0c-fb28-4d35-abd7-075b979d0241" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'إجابتك'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="417.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="024cf02d-c5b6-40ab-b038-5cbe9a08365f" Text="[Name]" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSd9Ei7Fv1u_-_lMnguFdwgYU9Jrm8ynQeNqiVIsR_eWRN2UKA/viewform" CVScreenId="6e3012c9-8a8b-4294-8718-cc1c5ff9e722" ContentHash="43aOGOQ-gU602viZ7rW1qQ" CvElementArea="956, 718, 377, 41" CvType="InputBox" DesignTimeRectangle="960, 726, 369, 30" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="26e814c6-f60c-4c77-812c-1060075bbc51" InformativeScreenshot="aa68baab86da3e339df67571c41db165.png" Reference="E1SM7XKpOkGHcZaTqDgpKg/bRWsAvDkt0mNhoIZL_5w8A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Task 2' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                              <uix:Target CVScreenId="6e3012c9-8a8b-4294-8718-cc1c5ff9e722" CvElementArea="956, 718, 377, 41" CvType="InputBox" DesignTimeRectangle="1293, 729, 36, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='إجابتك' tag='DIV' type='' class='ndJi5d snByac' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='إجابتك' /&gt;" Guid="a7053d7c-baf7-4605-a66d-258b72a555d8" SearchSteps="FuzzySelector, CV" />
+                              <uix:Target DesignTimeRectangle="1233, 621, 105, 53" Guid="723d8668-a4f4-450e-b579-557b497b9fb4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGkAAAA1CAYAAABCzsW2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATYSURBVHhe7ZjdTxRnFMaVJsiFQS4gBJUqDRfElCY2SokmXij0Qi2xXIM3mIb0oihooyus1o/WtsHERr0Sgm1ajdRqUy+qrYsRqygKyoJ8LB+u/0UvmuM87+47nRnOwrYs5picTX6Z3WfOvDN7nve8H7PE+ZAiHlZUZMGKiixYUZEFKyqyYEVFFqyoyIIVFVmwoiILVlRkwYqKLFhRkQUrKrJgRUUWrKjIghUVWbCiSGp27aLJqRc0EZuibdXVbAyI9Nw1cYjnzr+BsOJrYdvbq4m+aqWftqdOuBdr0tR0nB487Ke8vDw2Tk3KIFtWryT68v+ZBI4fP8nGqUkLZEfJWvq76RMKfbA+UUlJk6rXrKL4nno6sXkjex2wJo1PTDnHOI2NT9KGDbPj1aQFcmzTRqJTYaKvHU61Jo/J3w4zDXXsdcCa1HOnlzq7LppqikTuUE5Oji+OM6mwsJB+/uWaY/CkW4mxyWm69UeEysrK3Lj8/HwaHIyaNurq6mho6Hky/iXd7b1vYtExHvT1Gw3nMPSWl5e7bYDs7GxqaztCY2Ox5PVx0xba9MalCSsuKm8tXUofvbOWKNySMOdkiJref49WLFvGxlusSUhgUVERDT6NmkS1tOz3xQVNKi0tpeGRcRMLU8Lho/TNt+00MDDkJtnOb9YkVCsWKOgQXxw7kTTFSXR0hEbHJqjXMQw6jsE20Glu3vzT6Lgv7nXu3HmacNrEMxw8dNh91jRhxUUnVLHeqaA2okNNpqJufLyDjfPiNQm/6+t3mz89MjpujLBxQZNgIqrmu7Pn3RiAZPY5yUfszp01RrMmIcGIz8rKMnpxcTFFh0eNfvlKt6ujYu7d73Pan6GtW6uM1tj4qXmuYJXbjoVqrqiodPU0YMVFxcxFTvVQ+ACtXL6c/tnXaAxDNXHxlqBJSNSvv90wicPRJi5o0lx0dl70xbqVFJumyspNvljbbm1trU/v+v4Htw08A8xJdX9UH54Xx+C5OWDFRWXzqiKiw/tcU4xpRw6Y+SoY6yVoEkAFoZLQc1FZ0FKZlJubS9XO/grD3dVr1+mZM3ThOm+sNQlD07p17/quR7uoguD84zXaXo+FTXv7aQqFWn38eOmyMam7+6qvjXlgRZFwJgEMZ0g2hhIMKUGTMORcuNBhkuPl0eMB6u9/wpoE8N17H7TLmec1CecSc4//XkGC/2EeWFEkqUyCCRhi8Oc7OrrMZO9N/JkzZ825p0PDZu5BRdlr0aMzaVJBQQENPovS89EYlZSU+OIWACuKJJVJAMti7JswzCT2UYmkwZCHyWoJziV20s+kSVybXjAXYRGDFV/w3BywokjmMgngDYQdTmYnbYYaGvb44j/b2+zEYk6acfcvCzUJvz8/GDLPcDvS43t1hT0WKgwdCXOj1dOAFUUyn0lICPYrXpOg26RhxYb9Cnrzvb/6jJZYPMSpuTmx18qESRh+f79127Q7e5+UGJLtSjRNWFEk85kEamoQ4zcJCcGK7t+3DS/NEFhV9aGpIFQSVl2IzYRJgHvjgO/YyP5HgwArKrJgRUUWrKjIghUVWbCiIgtWVGTBioosWFGRBSsqsmBFRRasqMiCFRVZsKIiC1ZUZMGKiixYUZEFKyqyYEVFFqyoyIIVFVmwoiILVlTEsIReAa9e+fuPtP4AAAAAAElFTkSuQmCC" SearchSteps="Image" TargetType="ImageBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'msedge.exe Task 2'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="417.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="024cf02d-c5b6-40ab-b038-5cbe9a08365f" Text="[Age]" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSd9Ei7Fv1u_-_lMnguFdwgYU9Jrm8ynQeNqiVIsR_eWRN2UKA/viewform" CVScreenId="a4dd12c8-d076-4024-b02c-4f66bf43cc2c" ContentHash="6oo5hAxx-U6uh2I2fGUqww" CvElementArea="955, 620, 378, 41" CvType="InputBox" DesignTimeRectangle="960, 627, 369, 30" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-labelledby='i10 i13' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' matching:aria-labelledby='fuzzy' fuzzylevel:aria-labelledby='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="dffd3423-d09f-44ce-aaaa-f06792f044f7" InformativeScreenshot="0f0937134617369bde8807cb4fd8b698.png" Reference="E1SM7XKpOkGHcZaTqDgpKg/5PXjENiN_0qz_Q1jMZ5vog" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Task 2' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="1267, 556, 87, 46" Guid="eb6da3df-4958-42d2-8885-37344d589ad6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFcAAAAuCAYAAABd5YVlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARISURBVGhD7ZjdS1RBGMbTQL0yLzSyNLMLkQgsKJOCkmwjAiNIgsiSICpECrLCVk2TvsOoyO6yFMpQM6IPsnKLEqnUtNb82lVT6C76F97OM9voObvvbl9zbIURfhz3mfcM7HPe88zMzjL+SGMbrKhRAytq1MCKGjWwokYNrKhRAytq1MCKGjWwokYNrKhRAytq1MCKGjWwou1ERUXRmzcdNDI6Lq74zNXNcFjxt2jK3Uh0pozWJs1nx0ORlbWahjyj5PGOkndknBwOB1s3w2HF3+LOZsdfm3v12nXD1DFqbGwW3YvPXN0MhxWDUr8ph77u302OlAWT5uYsTCLnquX0vXAPrUxMYO8zExcXR++7PtDAoFd0bP+Ahz596qfExES2fgbDikH5ZhhI50/4OCevZb7r2XI6tmIZe5+ZHTt2Gt06QS7XK4qMjKSHj5+I7i0qOsjW42E0NDSK+EDd0LCXTlRW0c26ekP7Qlu2bp2sRXaXl1fQ4KBH1AI8uPz8fMuc0wQrhmROdDRdzl5jmPnT1COFtM6IhtkREWy9P7cb7lrM3Ldvv/gszTbXxsfHU2dntxjv6u6lk1WnjIfxVESKxztmMTcmJoZaW1+I2r7PQ3ThYjXV1Fyn4eERQ5ugkuOllrmnAVYMCUwc37vLZ27FUSMaSil38SK21p/k5GRy9w2ISEhLS7No6MjMzCxLfUVFpTCr9ladxXgYBcPM5h44UCg0PCQYLWsRNz29bnZ+m2HFkNzZnCMioWvnNpGxdNopTE6JjWXrzaBbYdajJ60Ws5qa7gndvLDFGvO9M7oWuwrsLqQOZG5LczEXTPWPCQk6HvPj6j9mI6wYkivZq4mOH5o0U5hdepgy580NqDUDA2AqvqR/vsoc7ulxiyiAhs4eHPJaNDPIamkmxlGHXK6uvkROZ5kFGUV4iP7z2Agr2gJeSbya+JLBmRBGo37JkqUiL4OZW1tbN2murOXnnML18nXAPDbCirYg89Pd109Pn7UFgAUL4zIyftW56EJpbkJCAvV8dIttXWpqakDtf4IVlYMtUnvHW8OMsaDbIux58VrLhedPMndq/uCZi9MgdhD+YzbCisqRxoU6LJh/b0CXQ/uT3cKxEqeobXO9FObL2vT0dNHR/+GYzYrKwS4AXxwLCzcukWaiK2EQ4kDGxdQ+17eQQTObi+0X4gV64D53nG7cuGV5QNMAKyoFnYqODfbKmkHOYg9sXthgcEvLA9F5MEme0F69bg+IDO6Ehv/R6dNsLGDFsEdmLBY8eRgJQ1gxbMBrjk5ev36DRc8xsnPYMxLuvwWzYthQXHxERARyEz/U4EDQ3HJfRAxiIi9vO3tfmMCKYQNysqBgD/V+7BMmyxx99txFGRkZ7D1hBCtq1MCKGjWwokYNrKhRAytq1MCKGjWwokYNrKhRAytq1MCKGjWwokYNrKhRAytq1MCKGjWwouafmUU/ABdVDP+QpjT6AAAAAElFTkSuQmCC" SearchSteps="Image" TargetType="ImageBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[Country]" sap:VirtualizedContainerService.HintSize="417.6,1400.8" sap2010:WorkflowViewState.IdRef="Switch`1_5">
+                      <Switch.Default>
+                        <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="416,276.8" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Other'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,216.8" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="024cf02d-c5b6-40ab-b038-5cbe9a08365f" Version="V5">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSd9Ei7Fv1u_-_lMnguFdwgYU9Jrm8ynQeNqiVIsR_eWRN2UKA/viewform" CVScreenId="efd6e8b4-e7dd-4d9b-8a74-d844b3e0b4f2" ContentHash="v9zXiq92Jk-yFuqWKcfmBg" CvElementArea="1300, 465, 31, 31" CvType="RadioButton" DesignTimeRectangle="1303, 468, 25, 25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='i29' tag='DIV' /&gt;" Guid="c844e2cf-bd3f-4df4-81f2-ca32be869455" InformativeScreenshot="a1619e2a616ddae8fbbc4da0a4cf06f0.png" Reference="E1SM7XKpOkGHcZaTqDgpKg/voM4VuYtM0uCcNSHwBrC7A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Task 2' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                    <uix:Target CVScreenId="efd6e8b4-e7dd-4d9b-8a74-d844b3e0b4f2" CvTextArea="1242, 470, 46, 17" CvTextArgument="Other" CvType="Text" DesignTimeRectangle="1244, 468, 45, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Other' tag='SPAN' type='' class='aDTYNe snByac OvPDhc OIC90c' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Other' /&gt;" Guid="77bf8c9b-3b90-4740-8418-283502f1bcd8" SearchSteps="FuzzySelector, CV" />
+                                    <uix:Target DesignTimeRectangle="1217, 237, 122, 55" Guid="405389cd-d410-419e-9a04-3aee8e19ca26" ImageBase64="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" SearchSteps="Image" TargetType="ImageBased" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                        </Sequence>
+                      </Switch.Default>
+                      <Sequence x:Key="Egypt" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,276.8" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Egypt'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,216.8" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="024cf02d-c5b6-40ab-b038-5cbe9a08365f" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSd9Ei7Fv1u_-_lMnguFdwgYU9Jrm8ynQeNqiVIsR_eWRN2UKA/viewform" CVScreenId="74af2f61-9e42-451a-a4da-edf96d315bcf" ContentHash="iag38Z7HhUqbql7GmIZZmg" CvElementArea="1300, 476, 31, 31" CvType="RadioButton" DesignTimeRectangle="1303, 479, 25, 25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='i20' tag='DIV' /&gt;" Guid="d98279df-05da-493e-9669-1169a0ef28f5" InformativeScreenshot="e9657532778810a661e6224c202d779d.png" Reference="E1SM7XKpOkGHcZaTqDgpKg/QzfTIVgEZ0WYsC1HTc0z8w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Task 2' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                  <uix:Target CVScreenId="74af2f61-9e42-451a-a4da-edf96d315bcf" CvTextArea="1241, 482, 47, 20" CvTextArgument="Egypt" CvType="Text" DesignTimeRectangle="1243, 479, 46, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Egypt' tag='SPAN' type='' class='aDTYNe snByac OvPDhc OIC90c' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Egypt' /&gt;" Guid="e94a4b11-bac3-4387-9579-2ff9db29cf8e" SearchSteps="FuzzySelector, CV" />
+                                  <uix:Target DesignTimeRectangle="1226, 413, 113, 44" Guid="0f0dab0d-84e8-4581-913d-16bcf96e704a" ImageBase64="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" SearchSteps="Image" TargetType="ImageBased" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                      </Sequence>
+                      <Sequence x:Key="KSA" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,276.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'KSA'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,216.8" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="024cf02d-c5b6-40ab-b038-5cbe9a08365f" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSd9Ei7Fv1u_-_lMnguFdwgYU9Jrm8ynQeNqiVIsR_eWRN2UKA/viewform" CVScreenId="efd6e8b4-e7dd-4d9b-8a74-d844b3e0b4f2" ContentHash="J50pbPg-DkyTpGI6xIp1bw" CvElementArea="1300, 365, 31, 31" CvType="RadioButton" DesignTimeRectangle="1303, 368, 25, 25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='i23' tag='DIV' /&gt;" Guid="2b8b0bb6-b8d3-42a7-b689-37d577bc4450" InformativeScreenshot="7b5aea76d827d42685b2474c75909a8f.png" Reference="E1SM7XKpOkGHcZaTqDgpKg/Lj7x-D8MuEqume23OXWTpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Task 2' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                  <uix:Target CVScreenId="efd6e8b4-e7dd-4d9b-8a74-d844b3e0b4f2" CvTextArea="1252, 371, 36, 16" CvTextArgument="KSA" CvType="Text" DesignTimeRectangle="1254, 368, 35, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='KSA' tag='SPAN' type='' class='aDTYNe snByac OvPDhc OIC90c' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='KSA' /&gt;" Guid="657b3a7d-4a98-4c16-b112-3fb1bd4f9a20" SearchSteps="FuzzySelector, CV" />
+                                  <uix:Target DesignTimeRectangle="1241, 245, 102, 50" Guid="d16d054e-6087-4c71-9da5-bf1c90138ebf" ImageBase64="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" SearchSteps="Image" TargetType="ImageBased" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                      </Sequence>
+                      <Sequence x:Key="Jordan" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,276.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Jordan'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,216.8" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="024cf02d-c5b6-40ab-b038-5cbe9a08365f" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSd9Ei7Fv1u_-_lMnguFdwgYU9Jrm8ynQeNqiVIsR_eWRN2UKA/viewform" CVScreenId="efd6e8b4-e7dd-4d9b-8a74-d844b3e0b4f2" ContentHash="tyQewMtDBkuKCg7VJMWPyw" CvElementArea="1300, 415, 31, 31" CvType="RadioButton" DesignTimeRectangle="1303, 418, 25, 25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='i26' tag='DIV' /&gt;" Guid="25133e8e-2baf-45ea-a62a-adeab3861d21" InformativeScreenshot="ae8d6cd68f4b026c1b7b0ed6bdec0dec.png" Reference="E1SM7XKpOkGHcZaTqDgpKg/rRqDuxJhoEewWvn2zBirkQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Task 2' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                  <uix:Target CVScreenId="efd6e8b4-e7dd-4d9b-8a74-d844b3e0b4f2" CvTextArea="1229, 420, 60, 17" CvTextArgument="Jordan" CvType="Text" DesignTimeRectangle="1231, 418, 58, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Jordan' tag='SPAN' type='' class='aDTYNe snByac OvPDhc OIC90c' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Jordan' /&gt;" Guid="cab22538-1fa1-499c-9d7f-3db983534ace" SearchSteps="FuzzySelector, CV" />
+                                  <uix:Target DesignTimeRectangle="1241, 245, 102, 51" Guid="62652336-6c17-4652-90d5-2a442b52db3c" ImageBase64="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" SearchSteps="Image" TargetType="ImageBased" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                      </Sequence>
+                    </Switch>
+                    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[Gender]" sap:VirtualizedContainerService.HintSize="417.6,898.4" sap2010:WorkflowViewState.IdRef="Switch`1_6">
+                      <Switch.Default>
+                        <Sequence DisplayName="Default" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </Switch.Default>
+                      <Sequence x:Key="Female" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,276.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Female'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,216.8" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="024cf02d-c5b6-40ab-b038-5cbe9a08365f" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSd9Ei7Fv1u_-_lMnguFdwgYU9Jrm8ynQeNqiVIsR_eWRN2UKA/viewform" CVScreenId="5a1bfbd9-72e3-4afb-9664-ea7de85498c6" ContentHash="hUcs8ocXmU6BMFsH8o37gQ" CvElementArea="1300, 642, 31, 31" CvType="RadioButton" DesignTimeRectangle="1303, 645, 25, 25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='i37' tag='DIV' /&gt;" Guid="6a498ebb-68a7-4f9f-8dce-61d118060152" InformativeScreenshot="3ea1bfca843b9837955294ab4de99c06.png" Reference="E1SM7XKpOkGHcZaTqDgpKg/-7PIy38FoUqgd7yWcD25vw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Task 2' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                  <uix:Target CVScreenId="5a1bfbd9-72e3-4afb-9664-ea7de85498c6" CvTextArea="1227, 647, 61, 17" CvTextArgument="Female" CvType="Text" DesignTimeRectangle="1229, 645, 60, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Female' tag='SPAN' type='' class='aDTYNe snByac OvPDhc OIC90c' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Female' /&gt;" Guid="9d9c98e6-b494-45f1-bee1-7627464f4edc" SearchSteps="FuzzySelector, CV" />
+                                  <uix:Target DesignTimeRectangle="1242, 573, 94, 47" Guid="f1f9b7e8-3292-4924-a06a-f6549c4d9e52" ImageBase64="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" SearchSteps="Image" TargetType="ImageBased" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                      </Sequence>
+                      <Sequence x:Key="Male" DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,276.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Male'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382.4,216.8" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="024cf02d-c5b6-40ab-b038-5cbe9a08365f" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSd9Ei7Fv1u_-_lMnguFdwgYU9Jrm8ynQeNqiVIsR_eWRN2UKA/viewform" CVScreenId="5a1bfbd9-72e3-4afb-9664-ea7de85498c6" ContentHash="O32n7TF4r0CuqriaV1jrCQ" CvElementArea="1301, 693, 31, 31" CvType="RadioButton" DesignTimeRectangle="1303, 695, 25, 25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='i40' tag='DIV' /&gt;" Guid="2ed37e5f-1f41-473e-8dc2-42cdc7aa8985" InformativeScreenshot="d42c3053fc4aae45119807f49fe1478e.png" Reference="E1SM7XKpOkGHcZaTqDgpKg/1leOhZBln0i1jvuOc4PYyg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Task 2' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                  <uix:Target CVScreenId="5a1bfbd9-72e3-4afb-9664-ea7de85498c6" CvTextArea="1247, 697, 41, 17" CvTextArgument="Male" CvType="Text" DesignTimeRectangle="1248, 695, 40, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Male' tag='SPAN' type='' class='aDTYNe snByac OvPDhc OIC90c' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Male' /&gt;" Guid="17e47ebc-1d76-45be-95d9-5e666f4000eb" SearchSteps="FuzzySelector, CV" />
+                                  <uix:Target DesignTimeRectangle="1245, 574, 96, 41" Guid="d93069bb-3eca-49b1-9e41-3a20f4ed4b78" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAApCAYAAADKzyycAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVhSURBVGhD7Zj/T9VVGMeVNvQn4geICImojTEXo0YRsy1MojU3myzHclLTxtQxVxszhnxPs68jNdPVmqawyIHRDKRABYZIkiDCRb7cLyhu/db6F57u++BzPZ/PfUAubaf7w2F7jft5Ps8595zn/ZzznHNXBf/I8r8iGi3mEI0Wc4hGizlEo8UcotFiDtFoMYdotJhDNFrMIRot5hCNFnOIRos5RKPFHKLRYg7RaDGHaLSYQzRazCEa/xP5+a/Sb9095PPfpcDcvMLnn6M/R27Se6WlFBsbK7YzyenTZ8kfuEtvbt0qvjeIaKS2La8TfVJDr6x7QnwvsXbtWjrf/osKOCZ3pbePPjr4MdXVNdCvnRfJ6wuod4PXrlNycrLYhymiXoCWzYURCRATE0OnTp1RAe4fGKSkpKQwn/j4eLp0uU/5IADu9yaJSgGa3iigv/a8S4VpKSEBCp5cR1UvPU//lO2iF5MT9YYOMBFMaMJzm9LTnxF9QEZGBnkmp6njYhclJCSIPiaISgH+DgaZPq9b4DP+X7Pw/9NaqnjhOb2hAwQUmV1f3yC+fxioC7W19TQz41P9gImJKSopKXH4sdAVFZVU13CQZr3+kP+Fjs6wlYdt8etvTob8pmf8tHPnrkUFyM7Opp5LvaE+/YF5am+/4EgWfB4b81Bf/1U6euy46icwd4+am1tWUt+chkfXrKGjG18OBvx+4PeXUX5wG3pk9WqHn05qaqrK6lnfHOXlbRB9lgJB6u6+rCY8eXuWvviykU6cOEleL2rGPao8UB3yZQE8k1MqOJg06szI6C3V/o/hG2qrgy+Cwf2Ojo0rv7a2n1UtGr05HiZAUVFRqE4hoVC7EGTVPujPdYsFQHscNL797nv64WxTWLIsE6cBgZ4vfWdBgPoPg9tQNW15+imHj5v1659VwYIIEEPyWYq9e8tUoHt7+5UYbMeEx255VPbm5uYpGwuA4G/bVhzyRdBxyvL579CmTa8p2/btO8R+i4vfvt/HAwHQHuLBhvfsCyAERPjxp3PqmQWAbd++9x2+K8BpaNlcoLafkR1vqT2fDlcpIdLi4hx+OhwUDCrSfR3FGwHSg6GDrMVE8R/P/F2DQ9fDlvuZpmZHP8h2f+BOWGaiHdrrvtwvxoIx6f68wjnBWAAkRlZWlsN3BTgNxzZuIDrwQSjgSpDqcsp9/DGHnw4GgcGMjXsoMdFZqHl1IIg6PPkHy3meGhu/oqqqGgfIOvgjmOiPA4UtQv8egH0dvrt376G44PiHb4wuGiR3DSgv36/a4gTnHgPqGrZG3mJ5zCtd8S5EY0QsVQNSUlJUEfu950qIWe9caPKLCeSmt29A9ccCIID69wAWAMHkIKFvfIfkqwvAbZeC/blvgM/uviNENEYElmxnV7ca5HJOQQgmTwYrBitnatoXPL6mi/46yxUg0hVQUVml2h45cjzM103UCQA4MCiaD7vl6gJI+7EO9n78jIGTEZ6XKwCesW3hGVuS7ifVHdQJ1IvFagCOxEgUJElUCoBB80342tAwpaWFZzNOIocOHVYT1yfP2YefLvgICTIzM9XKQH0oLCxUtkgEYF/9CAlwekKf+hg4qLDpRRvzwj0C/WKV4zkqBQAIMM7lGCyOfwNXh1QGu38LwiRxieJTDNqhNuBd+D1gXgnLWRmJAHpScL8YH9rzOFgAwMLgnfseMDXjpZycHOUXtQIwuE22tp4P7r/O4opMxAqQBg0x3DdhfMYljIMPIhEAoC36mA4GkPvt6Oiic61tYQIA900Y4BmrkX2iXgBLRIhGizlEo8UcotFiDtFoMYdotJhDNFrMIRot5hCNFiOson8BbQsxXeKCP1cAAAAASUVORK5CYII=" SearchSteps="Image" TargetType="ImageBased" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                      </Sequence>
+                    </Switch>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'إرسال'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="417.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="024cf02d-c5b6-40ab-b038-5cbe9a08365f" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLSd9Ei7Fv1u_-_lMnguFdwgYU9Jrm8ynQeNqiVIsR_eWRN2UKA/viewform" CVScreenId="5a1bfbd9-72e3-4afb-9664-ea7de85498c6" ContentHash="R_rwg0uF9USYtiH6AjoXOw" CvElementArea="1263, 777, 99, 48" CvTextArea="1292, 791, 38, 21" CvTextArgument="إرسل" CvType="Button" DesignTimeRectangle="1265, 779, 94, 45" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' tag='SPAN' /&gt;" Guid="be992133-b83b-4caf-899f-414c0420111b" InformativeScreenshot="902237dd44d57cba54f76bc5b4b1362b.png" Reference="E1SM7XKpOkGHcZaTqDgpKg/NY_C0xF4jkmKG5n9Lkwayg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Task 2' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="5a1bfbd9-72e3-4afb-9664-ea7de85498c6" CvElementArea="1263, 777, 99, 48" CvTextArea="1292, 791, 38, 21" CvTextArgument="إرسل" CvType="Button" DesignTimeRectangle="1295, 779, 35, 45" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='إرسال' tag='SPAN' type='' class='NPEfkd RveJvd snByac' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='إرسال' /&gt;" Guid="b430f292-c298-4f05-9523-613ff420dcf5" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'إرسال رد آخر'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="417.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="024cf02d-c5b6-40ab-b038-5cbe9a08365f" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="docs.google.com/forms/u/0/d/e/1FAIpQLSd9Ei7Fv1u_-_lMnguFdwgYU9Jrm8ynQeNqiVIsR_eWRN2UKA/formResponse" CVScreenId="8a773749-caff-4dad-b2ba-4e6472133b57" ContentHash="jH3yLdq6akiIcbf6qpzSjA" CvTextArea="1259, 347, 78, 20" CvTextArgument="آخر د ارسل" CvType="Text" DesignTimeRectangle="1259, 348, 79, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='A' /&gt;" Guid="c6886713-7cc4-4360-abf2-1733f0a6fbd9" InformativeScreenshot="514ad4ab845c334a6c0f1f01ea16854d.png" Reference="E1SM7XKpOkGHcZaTqDgpKg/WtsFWaovmUWdSRtpE629gQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Task 2' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="417.6,115.2" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Edge" ContentHash="kqiogM-T-0iDTVxaLzUvHg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAA4SURBVDhPY0i32n4AiP+TifeDDMAmQTQeZAbAADIbG0DWQ10DyMGjXhh0XiAHU8WA/eiCxOPtuwEl0a7qam5sogAAAABJRU5ErkJggg==" InformativeScreenshot="4e81ef6d6929a09acab63aec7c575680.jpg" Reference="E1SM7XKpOkGHcZaTqDgpKg/gXLADSt58kqRgadE0Nbemw" Selector="&lt;html app='msedge.exe' title='Task 2' /&gt;" Url="https://docs.google.com/forms/d/e/1FAIpQLSd9Ei7Fv1u_-_lMnguFdwgYU9Jrm8ynQeNqiVIsR_eWRN2UKA/viewform" Version="V2" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>
